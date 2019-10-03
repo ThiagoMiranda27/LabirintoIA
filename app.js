@@ -45,7 +45,7 @@ Cell.prototype.getNeighbors = function(){
 	// Not necessarily legal neighbors
 	row = this.row;
 	col = this.col;
-	return [[row-1,col-1], [row-1,col], [row-1,col+1], [row,col-1], [row,col+1], [row+1,col-1], [row+1,col], [row+1,col+1]];
+	return [[row-1,col], [row,col-1], [row,col+1], [row+1,col]];
 };
 
 Cell.prototype.setDistance = function(distance){
